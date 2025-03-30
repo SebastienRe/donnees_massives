@@ -11,7 +11,7 @@ services:
     volumes:
       - hadoop_namenode:/hadoop/dfs/name
       - ./hadoop-env.sh:/opt/hadoop-3.2.1/etc/hadoop/hadoop-env.sh
-      - code_hadoop:/opt/hadoop-3.2.1/code
+      - ./code:/opt/hadoop-3.2.1/code
     environment:
       - CLUSTER_NAME=test
     env_file:
